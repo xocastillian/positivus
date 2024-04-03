@@ -1,0 +1,25 @@
+.partners {
+	margin-top: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.partner__item {
+	filter: contrast(0.1);
+
+	transition: filter 0.2s linear;
+
+	&:hover {
+		filter: contrast(1);
+	}
+}
+
+@media (max-width: 768px) {
+	.partners {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 20px;
+	}
+}

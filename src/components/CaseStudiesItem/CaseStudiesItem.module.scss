@@ -1,0 +1,30 @@
+.caseStudiesItem {
+	display: flex;
+	flex-direction: column;
+	max-width: 286px;
+	color: #fff;
+	height: 186px;
+	justify-content: space-between;
+
+	.caseStudiesItem__text {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+	.link__text {
+		font-size: 20px;
+		line-height: 28px;
+		color: #b9ff66;
+	}
+
+	.link {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		transition: transform 0.2s linear;
+
+		&:hover {
+			transform: translateY(-5px);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+.intro {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+
+	.intro__title {
+		font-weight: 500;
+		font-size: 40px;
+		line-height: 51px;
+		padding: 0 7px;
+		background-color: #b9ff66;
+		border-radius: 7px;
+	}
+
+	.intro__text {
+		max-width: 580px;
+		font-size: 18px;
+		line-height: 23px;
+	}
+}
+
+@media (max-width: 768px) {
+	.intro {
+		flex-direction: column;
+		text-align: center;
+	}
+}

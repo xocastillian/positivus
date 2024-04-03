@@ -1,0 +1,32 @@
+.caseStudies {
+	margin-top: 150px;
+
+	.caseStudies__cases {
+		margin-top: 80px;
+		background-color: #191a23;
+		border-radius: 45px;
+		padding: 70px 60px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 1024px) {
+	.caseStudies {
+		.caseStudies__cases {
+			justify-content: normal;
+			gap: 20px;
+			overflow-x: scroll;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.caseStudies {
+		.caseStudies__cases {
+			flex-direction: column;
+			gap: 50px;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+/* Для кастомизации элементов Pagination */
+.swiper-pagination {
+	position: relative;
+	margin-top: 125px;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: center;
+}
+
+.swiper-pagination-bullet {
+	background-color: #fff;
+	transition: all 0.3s linear;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: #b9ff66;
+	transform: scale(1.5);
+	transition: all 0.3s linear;
+}

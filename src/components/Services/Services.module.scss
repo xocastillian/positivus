@@ -1,0 +1,22 @@
+.services {
+	margin-top: 140px;
+
+	.services__items {
+		margin-top: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+@media (max-width: 1024px) {
+	.services {
+		.services__items {
+			display: flex;
+
+			justify-content: center;
+		}
+	}
+}

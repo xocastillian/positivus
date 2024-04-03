@@ -1,0 +1,37 @@
+.team {
+	margin-top: 140px;
+
+	.team__teammates {
+		margin-top: 80px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 39px;
+	}
+
+	.team__link {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		margin-top: 40px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.team {
+		display: flex;
+		flex-direction: column;
+
+		.team__teammates {
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.team {
+		.team__link {
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}

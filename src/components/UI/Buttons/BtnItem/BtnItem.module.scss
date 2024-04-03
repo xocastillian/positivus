@@ -1,0 +1,54 @@
+@mixin btn {
+	font-size: 20px;
+	line-height: 28px;
+	padding: 20px 35px;
+	border-radius: 14px;
+	display: inline-block;
+}
+
+$transition: color 0.2s linear, background-color 0.2s linear;
+
+.mainBtn {
+	@include btn;
+	border: 1px solid #191a23;
+	color: inherit;
+	background-color: none;
+	transition: $transition;
+
+	&:hover {
+		background-color: #191a23;
+		color: #fff;
+	}
+}
+
+.darkBtn {
+	@include btn;
+	background-color: #191a23;
+	color: #fff;
+	transition: $transition;
+
+	&:hover {
+		background-color: #f3f3f3;
+		color: #191a23;
+	}
+}
+
+.greenBtn {
+	@include btn;
+	background-color: #b9ff66;
+	color: inherit;
+	transition: $transition;
+
+	&:hover {
+		background-color: #191a23;
+		color: #b9ff66;
+	}
+}
+
+@media (max-width: 768px) {
+	.mainBtn,
+	.darkBtn,
+	.greenBtn {
+		font-size: 16px;
+	}
+}

@@ -1,0 +1,15 @@
+.link {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	transition: transform 0.2s linear;
+
+	.link__text {
+		font-size: 20px;
+		line-height: 28px;
+	}
+
+	&:hover {
+		transform: translateY(-5px);
+	}
+}
